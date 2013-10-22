@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSArray *blogPosts;
 
+-(IBAction)toMainScreen:(UIStoryboardSegue *)segue;
+
 @end

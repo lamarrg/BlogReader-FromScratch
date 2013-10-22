@@ -21,6 +21,7 @@
 		2A8A1ED4181440E3001C45B5 /* BlogReader_FromScratchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A1ED3181440E3001C45B5 /* BlogReader_FromScratchTests.m */; };
 		2A8A1EDE181445F4001C45B5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8A1EDD181445F4001C45B5 /* MainStoryboard.storyboard */; };
 		2A8A1EE118144A6F001C45B5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A1EE018144A6F001C45B5 /* TableViewController.m */; };
+		2A8A1F2B181606EE001C45B5 /* BRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A1F2A181606EE001C45B5 /* BRDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2A8A1EDD181445F4001C45B5 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2A8A1EDF18144A6F001C45B5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		2A8A1EE018144A6F001C45B5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		2A8A1F29181606EE001C45B5 /* BRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDetailViewController.h; sourceTree = "<group>"; };
+		2A8A1F2A181606EE001C45B5 /* BRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				2A8A1EBE181440E2001C45B5 /* BRAppDelegate.m */,
 				2A8A1EDF18144A6F001C45B5 /* TableViewController.h */,
 				2A8A1EE018144A6F001C45B5 /* TableViewController.m */,
+				2A8A1F29181606EE001C45B5 /* BRDetailViewController.h */,
+				2A8A1F2A181606EE001C45B5 /* BRDetailViewController.m */,
 				2A8A1EC0181440E2001C45B5 /* Images.xcassets */,
 				2A8A1EB5181440E2001C45B5 /* Supporting Files */,
 				2A8A1EDD181445F4001C45B5 /* MainStoryboard.storyboard */,
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8A1EBF181440E2001C45B5 /* BRAppDelegate.m in Sources */,
+				2A8A1F2B181606EE001C45B5 /* BRDetailViewController.m in Sources */,
 				2A8A1EE118144A6F001C45B5 /* TableViewController.m in Sources */,
 				2A8A1EBB181440E2001C45B5 /* main.m in Sources */,
 			);
@@ -452,6 +458,7 @@
 				2A8A1ED9181440E3001C45B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A8A1EDA181440E3001C45B5 /* Build configuration list for PBXNativeTarget "BlogReader-FromScratchTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +467,7 @@
 				2A8A1EDC181440E3001C45B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "BRDetailViewController.h"
 
 @interface TableViewController ()
 
@@ -29,7 +30,7 @@
     
    // NSURL *blogURL = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary"];
     
-    NSURL *blogURL = [NSURL URLWithString:@"http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=2014+corvette"];
+    NSURL *blogURL = [NSURL URLWithString:@"http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=sara+ramirez"];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:blogURL];
     
@@ -82,7 +83,7 @@
     NSDictionary *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
     
     cell.textLabel.text = [blogPost valueForKey:@"url"];
-    cell.detailTextLabel.text = [blogPost valueForKey:@"visibleUrl"];
+    //cell.detailTextLabel.text = [blogPost valueForKey:@"visibleUrl"];
     
     return cell;
 }
@@ -126,16 +127,22 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"toDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *title = self.blogPosts [indexPath.row];
+        [[segue destinationViewController] setDetailItem:title];
+    }
 }
 
- */
+-(IBAction)toMainScreen:(UIStoryboardSegue *)segue {
+    
+}
+ 
 
 @end
